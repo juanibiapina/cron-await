@@ -1,0 +1,41 @@
+{
+  "name": "@juanibiapina/cron-await",
+  "version": "1.0.0",
+  "description": "Block until a cron schedule fires",
+  "author": "Juan Ibiapina",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanibiapina/cron-await.git"
+  },
+  "type": "module",
+  "bin": {
+    "cron-await": "dist/cron-await.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "vite build",
+    "check": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "croner": "^9.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.1"
+  }
+}

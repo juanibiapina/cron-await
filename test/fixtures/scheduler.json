@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "name": "post-market-scan-2130",
+      "cron": "30 21 * * 1-4",
+      "cwd": "/home/juan/workspace/juanibiapina/trading",
+      "promptFile": "prompts/post-market-scan.md"
+    },
+    {
+      "name": "morning-evaluation",
+      "cron": "20 10 * * 2-5",
+      "cwd": "/home/juan/workspace/juanibiapina/trading",
+      "promptFile": "prompts/morning-evaluation.md"
+    },
+    {
+      "name": "daily-email",
+      "cron": "30 11 * * 2-5",
+      "cwd": "/home/juan/workspace/juanibiapina/trading",
+      "promptFile": "prompts/daily-email.md"
+    }
+  ]
+}
